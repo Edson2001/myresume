@@ -1,0 +1,42 @@
+@import 'vfonts/Lato.css';
+@import 'vfonts/FiraCode.css';
+
+$backgroundSite: #101014;
+$colorSite: rgba(255, 255, 255, 0.82);
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: $backgroundSite;
+    color: $colorSite;
+    font-family: 'Roboto', sans-serif;
+}
+
+.editorArea{
+    background-color: #303033;
+    height: 100vh;
+    padding: 5px;
+}
+.resumePreview{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .resumeView{
+        background-color: #FFF;
+        height: 450px;
+        max-width: 320px;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .options{
+        margin-top: 12px;
+        width: 100%;
+        max-width: 320px;
+        button{
+            margin-right: 12px;
+        }
+    }
+}
