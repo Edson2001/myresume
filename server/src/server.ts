@@ -19,12 +19,12 @@ app.get("/", async (req, res)=>{
     await browser.close()
 
     if(fs.existsSync(__dirname+'/name.png')){
-        console.log('exsite')
+        return res.send("n Server")
     }else{
-        console.log('nao existe')
+        return res.send("s Server")
     }
 
-    return res.send("Server")
+    
 })
 
 
