@@ -5,12 +5,15 @@ const app = express()
 import fs from "fs"
 
 app.get("/", async (req, res)=>{
-
+    return res.send("Server")
     //C:/Program Files/Google/Chrome/Application/chrome.exe
+})
 
+
+app.get('/pupp', async (req, res)=>{
     const browser = await puppeteer.launch({
-     executablePath: '/usr/bin/chromium-browser',
-     headless: true
+    executablePath: '/usr/bin/chromium-browser',
+    headless: true
     })
 
     const page = await browser.newPage()
@@ -23,10 +26,6 @@ app.get("/", async (req, res)=>{
     }else{
         return res.send("s Server")
     }
-
-    
 })
-
-
 
 app.listen(3003, ()=> console.log("http://localhost:3003"))
