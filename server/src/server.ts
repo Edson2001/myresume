@@ -11,9 +11,13 @@ app.get("/", async (req, res)=>{
 
 
 app.get('/pupp', async (req, res)=>{
+
     const browser = await puppeteer.launch({
-    executablePath: '/usr/bin/chromium-browser',
-    headless: true
+        headless: true,
+        args:[
+            '--no--sandbox',
+            '--disable-stuid-sandbox'
+        ]
     })
 
     const page = await browser.newPage()
