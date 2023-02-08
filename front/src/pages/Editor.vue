@@ -1,31 +1,21 @@
 <script lang="ts"  setup>
+
 </script>
 
 <template>
 
-    
-    <nGrid x-gap="12" :cols="2">
-        <n-gi>
+    <Contianer>
+        <div  class="grid grid-cols-2 ">
             <div class="editorArea" >
-                <p>l,ls,s,l,sdl,s</p>
+                <p class="text-3xl font-bold" ></p>
             </div>
-        </n-gi>
-        <n-gi>
-            <div class="resumePreview" >
+
+            <div class="resumePreview " >
                 <div class="resumeView">
-                    <p>l,ls,s,l,sdl,s</p>
-                </div>
-                <div class="options">
-                    <n-button type="info">
-                        Escolher tema
-                    </n-button>
-                    <n-button type="primary">
-                        Baixar Resumo
-                    </n-button>
+                    <p></p>
                 </div>
             </div>
-        </n-gi>
-    </nGrid>
-
-
+        </div>
+    </Contianer>
+    
 </template>
