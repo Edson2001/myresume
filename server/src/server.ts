@@ -26,4 +26,4 @@ app.get('/pupp', async (req, res)=>{
     browser.close()
 })
 
-app.listen(process.env.ENV_SERVER_PORT || 30001)
+app.listen(process.env.ENV_SERVER_PORT || 3001)

@@ -1,8 +1,13 @@
-version: 3
-  services:
-    server:
-      build:
-        dockerfile: ./server
-    front:
-      build:
-        dockerfile: ./front
+services:
+  server:
+    build:
+      dockerfile: dockerfile
+      context: ./server   
+    ports: 
+      - "3001:3001"
+  front:
+    build:
+      dockerfile: dockerfile
+      context: ./front
+    ports: 
+      - "5173:5173"
