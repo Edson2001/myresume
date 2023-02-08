@@ -3,12 +3,12 @@ import {createRouter, createWebHistory} from "vue-router"
 const routes = [
     {
         path: '/',
-        redirect: '/editor'
+        redirect: '/paineleditor'
     },
     {
-        name: 'editor',
-        path: '/editor',
-        component: ()=> import('../pages/Editor.vue')
+        name: 'paineleditor',
+        path: '/paineleditor',
+        component: ()=> import('../pages/PainelEditor.vue')
     }
 ]
 
