@@ -2,7 +2,7 @@
 @tailwind component;
 @tailwind utilities;
 
-$backgroundSite: #101014;
+$backgroundSite: #14263d;
 $colorSite: rgba(255, 255, 255, 0.82);
 *{
     padding: 0;
@@ -15,9 +15,12 @@ body{
 }
 
 .editorArea{
-    background-color: #303033;
+    background-color: #1A1C22;
     height: 100vh;
     padding: 5px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    overflow: auto;
 }
 .resumePreview{
     height: 100vh;
@@ -32,4 +35,25 @@ body{
         border-radius: 5px;
         width: 100%;
     }
+}
+
+input{
+    background-color: #282c35;
+    outline: none;
+    width: 100%;
+}
+.w-100{
+    width: 100%;
+}
+textarea{
+    background-color: #282c35;
+    outline: none;
+}
+.links{
+    background-color: #282c35;
+    &:hover{
+        cursor: pointer;
+    }
+    width: fit-content;
+    border-radius: 10px;
 }
