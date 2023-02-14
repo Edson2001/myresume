@@ -1,7 +1,12 @@
 <template>
    <div class="resumePreview " >
         <div class="resumeView">
-            <p></p>
         </div>
     </div>
 </template>
+
+<style  lang="scss" scoped>
+.resumePreview{
+    color: #000;
+}
+</style>
